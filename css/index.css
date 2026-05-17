@@ -1,0 +1,33 @@
+
+h1 {
+    color: green;
+}
+.activite {
+    margin: 0.25rem 1rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+}
+.activite a {
+    text-decoration: none;
+}
+#activite_titre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+}
+.activite_cadre > div {
+    position: relative;
+    display: inline-block;
+    margin: 0.125rem;
+    vertical-align: top;
+}
+.activite_label {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.activite_image {
+    border-left: 1px solid #ccc;
+}
+.activite_image img {
+    width: 5rem;
+}
