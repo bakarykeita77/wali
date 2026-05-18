@@ -12,11 +12,37 @@
     <?php include("php/tete-de-wali.php"); ?>
     
     <div>
+
+        <div id="description_de_wali">
+
+            <h3 class="nk">ߌ ߣߌ߫ ߛߣߍ߫ ߥߊߟߌ߫ ߞߣߍ ߞߊ߲߬</h3>
+            <h3 class="fr">Bienvenue sur Wali</h3>
+
+            <p class="nk">
+                ߥߊߟߌ߫ ߦߋ߫ ߝߏ߬ߘߏ ߟߋ߬ ߘߌ߫ ߡߍ߲ ߦߋ߫ ߛߣߍ߬ߞߍ ߣߌ߫ ߓߋߦߊ߲ߧߊߟߌ ߟߎ߬ ߓߍ߯ ߞߍ߫ ߟߊ߫ ߢߐ߲߯ߝߍ߬߸ ߢߊ߫ ߡߊ߬߸ ߡߍ߲ ߘߴߊ߬ ߞߍ߫ ߊ߬ߟߎ߬ ߘߌ߫ ߢߐ߮ ߘߝߊ߫. 
+                ߛߍ߬ߣߍ ߓߊ߯ ߞߍ߫߸ ߘߎ߭ ߣߐ߮ ߘߌ߫ ߛߣߍ߬ߝߋ߲ ߠߎ߬ ߟߊߢߊ߬߸ ߞߊ߬ ߥߟߏߒߘߐ ߟߎ߬ ߖߘߌߥߊ߫߸ ߓߋߦߊ߲ ߠߎ߬ ߘߌ߫ ߏ߬ ߟߎ߫ ߕߣߐ߬ߓߐ߫߸ ߞߵߊ߬ߟߎ߬ ߖߘߌߥߊ߫.
+                ߏ߬ ߟߎ߬ ߝߣߊ߫ ߓߏ߭ ߣߴߊ߬ߟߎ߬ ߛߎߣߊ ߘߌ߫ ߞߍ߫ ߞߊ߬ ߘߎ߱ ߣߐ߯ߞߏ ߖߘߌߥߊ߫. ߏ߬ ߓߊ߯ ߞߍ߫߸ ߛߣߍ߬ߝߋ߲߫ ߟߊ߲߬ߣߍ ߥߟߊ ߟߊ߲߬ߕߊ ߟߎ߬ ߝߣߊ߫ ߘߌ߫ ߖߘߌߥߊ߫.
+            </p>
+            <p class="nk">
+                ߥߊߟߌ߫ ߛߌߦߊߡߊ߲ ߏ߬ ߟߎ߬ ߞߍ߫ ߢߐ߰ߝߍ ߞߎ߲߭ ߠߋ߬߸ ߞߊ߬ ߛߐ߬ߘߐ߲߬ߘߊ ߟߊ߫ ߛߌߦߊߦߊ߫߸ ߞߵߊ߬ߟߎ߬ ߖߘߌߥߊ߫.
+            </p>
+            
+            <p class="fr">
+                Wali est une ferme agro-pastorale, une exploitation rurale intégrée 
+                qui combine l'agriculture et l'élevage. 
+                les animaux nourrissent les sols avec le fumier, et les cultures peuvent nourrir les animaux.
+            </p>
+            <p class="fr">
+                L'objectif est de produire plusieurs Sources de revenus tout en utilisant les ressources de manière intelligente: 
+            </p>
+
+        </div>
         
         <div id="activite_titre">
             <p class="nk">ߥߊߟߌߘߊ ߟߎ߬</p>
-            <p class="fr">Les différentes activités</p>
+            <p class="fr">Les activités</p>
         </div>
+
 
         <div class="activite">
         <a href="elevage/index.php">

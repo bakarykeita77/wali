@@ -9,9 +9,10 @@
 </head>
 <body>
 
-    <?php include("../php/tete_de_wali.php"); ?>
+    <?php include("../php/tete-de-wali.php"); ?>
     
-    <h1>ߓߋߦߊ߲</h1>
+    <h1 class="nk">ߥߊߟߌ߫ ߟߊ߫ ߓߋߦߊ߲ ߠߊߡߐ߰ߣߍ߲ ߠߎ߬</h1>
+    <h1 class="fr">Les animaux élévés par Wali</h1>
 
 </body>
 </html>

@@ -9,9 +9,10 @@
 </head>
 <body>
 
-    <?php include("../php/tete_de_wali.php"); ?>
+    <?php include("../php/tete-de-wali.php"); ?>
     
-    <h1>ߛߍ߬ߣߍ</h1>
+    <h1 class="nk">ߛߍ߬ߣߍ</h1>
+    <h1 class="fr">Agriculture</h1>
 
 </body>
 </html>

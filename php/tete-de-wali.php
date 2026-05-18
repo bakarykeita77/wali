@@ -5,8 +5,10 @@
 <div id="tete_de_wali">
 
     <div id="nom_de_ferme">
-        <div class="nk">ߥߊߟߌ</div>
-        <div class="fr">Wali</div>
+        <a href="../index.php">
+            <div class="nk">ߝߊ߲ߓߊ</div>
+            <div class="fr">Home</div>
+        </a>
     </div>
 
     <div id="langue">
