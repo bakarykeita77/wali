@@ -1,7 +1,4 @@
 
-const version_nkos = document.querySelectorAll(".nk");
-const version_francaises = document.querySelectorAll(".fr");
-
 $("#langue").click(function() {
     $("#langue ul").toggle(".afficher");
 });
