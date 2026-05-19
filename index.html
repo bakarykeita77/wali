@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wali</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     
     <div id="accueil_head"></div>
     <script>
-        fetch("html/tete-de-wali.html")
+        fetch("./html/tete-de-wali.html")
         .then(response => response.text())
         .then(html => {
-        document.querySelector("#accueil_head").innerHTML = html;
+            document.querySelector("#accueil_head").innerHTML = html;
         });
     </script>
 
@@ -127,5 +127,5 @@
     </div>
 
 
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body> 

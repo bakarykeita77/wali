@@ -1,4 +1,11 @@
-
+.nk {
+    display: none;
+    direction: rtl;
+}
+.fr {
+    display: block;
+    direction: ltr;
+}
 body {
     margin: 0;
     padding: 0;
