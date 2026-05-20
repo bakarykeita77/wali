@@ -7,15 +7,31 @@
     
     <title>Wali</title>
 
-    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/class.css">
-    <link rel="stylesheet" href="/css/tete-de-wali.css">
 </head>
 <body>
     
-    <div id="accueil_head"></div>
-    <div id="accueil_body"></div>
- 
+    <style id="index_css"></style>
+    <style id="tete_de_wali_css"></style>
+    <div class="page_head" id="accueil_head"></div>
+    <div class="page_body" id="accueil_body"></div>
+
+    <script>
+        fetch("/css/index.css")
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector("#index_css").innerHTML = html;
+        });
+    </script>
+         
+    <script>
+        fetch("/css/tete-de-wali.css")
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector("#tete_de_wali_css").innerHTML = html;
+        });
+    </script>
+
     <script>
         fetch("/html/tete-de-wali.html")
         .then(response => response.text())
