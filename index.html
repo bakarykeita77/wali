@@ -7,9 +7,9 @@
     
     <title>Wali</title>
 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/class.css">
-    <link rel="stylesheet" href="./css/tete-de-wali.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/class.css">
+    <link rel="stylesheet" href="/css/tete-de-wali.css">
 </head>
 <body>
     
@@ -17,7 +17,7 @@
     <div id="accueil_body"></div>
  
     <script>
-        fetch("./html/tete-de-wali.html")
+        fetch("/html/tete-de-wali.html")
         .then(response => response.text())
         .then(html => {
             document.querySelector("#accueil_head").innerHTML = html;
@@ -27,14 +27,14 @@
     </script>
 
     <script>
-        fetch("./html/corps-de-wali.html")
+        fetch("/html/corps-de-wali.html")
         .then(response => response.text())
         .then(html => {
             document.querySelector("#accueil_body").innerHTML = html;
         });
     </script>
 
-    <script src="./jquery-3.3.1.js"></script>
-    <script src="./js/fonctions.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="/jquery-3.3.1.js"></script>
+    <script src="/js/fonctions.js"></script>
+    <script src="/js/index.js"></script>
 </body> 
