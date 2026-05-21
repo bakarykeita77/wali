@@ -7,28 +7,68 @@
     
     <title>Wali</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/class.css">
+    <link rel="stylesheet" href="/css/class.css">
 </head>
 <body>
+
+    <style>
+        .nk {
+    display: none;
+    direction: rtl;
+}
+.fr {
+    display: block;
+    direction: ltr;
+}
+#tete_de_wali {
+    background-color: greenyellow;
+    height: 10vh;
+    min-height: 3rem;
+    width: 100%;
+    margin: 0;
+}
+#nom_de_ferme, #langue {
+    position: relative;
+    display: inline-block; 
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    vertical-align: top;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #aaa;
+}
+#nom_de_ferme a {
+    text-decoration: none;
+}
+#langue p {
+    margin: 0;
+    padding: 0;
+}
+#langue ul {
+    display: none;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 0 0.5rem #ccc;
+}
+#langue li {
+    border-bottom: 1px solid #aaa;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+    </style>
+
     
     <style id="index_css"></style>
-    <style id="tete_de_wali_css"></style>
     <div class="page_head" id="accueil_head"></div>
     <div class="page_body" id="accueil_body"></div>
-
+ 
     <script>
         fetch("/css/index.css")
-        .then(html => {
-            document.querySelector("#index_css").innerHTML = html;
-        });
-    </script>
-         
-    <script>
-        fetch("/css/tete-de-wali.css")
         .then(response => response.text())
         .then(html => {
-            document.querySelector("#tete_de_wali_css").innerHTML = html;
+            document.querySelector("#index_css").innerHTML = html;
         });
     </script>
 
@@ -50,7 +90,7 @@
         });
     </script>
 
-    <script src="jquery-3.3.1.js"></script>
-    <script src="js/fonctions.js"></script>
-    <script src="js/index.js"></script>
+    <script src="/jquery-3.3.1.js"></script>
+    <script src="/js/fonctions.js"></script>
+    <script src="/js/index.js"></script>
 </body> 
