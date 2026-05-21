@@ -7,7 +7,8 @@
     
     <title>Wali</title>
 
-    <link rel="stylesheet" href="/css/class.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/class.css">
 </head>
 <body>
     
@@ -18,7 +19,6 @@
 
     <script>
         fetch("/css/index.css")
-        .then(response => response.text())
         .then(html => {
             document.querySelector("#index_css").innerHTML = html;
         });
@@ -50,7 +50,7 @@
         });
     </script>
 
-    <script src="/jquery-3.3.1.js"></script>
-    <script src="/js/fonctions.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="js/fonctions.js"></script>
+    <script src="js/index.js"></script>
 </body> 
