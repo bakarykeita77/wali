@@ -8,36 +8,23 @@
     <title>Wali</title>
 
     <link rel="stylesheet" href="/css/class.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/tete-de-wali.css">
 </head>
 <body>
-    
-    <style id="index_css"></style>
+
     <div class="page_head" id="accueil_head"></div>
     <div class="page_body" id="accueil_body"></div>
- 
-    <script>
-        fetch("/css/index.css")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector("#index_css").innerHTML = html;
-        });
-    </script>
 
     <script>
-        fetch("/html/tete-de-wali.html")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector("#accueil_head").innerHTML = html;
-        
+        Promise.all([
+            fetch("/html/tete-de-wali.html").then(r => r.text()),
+            fetch("/html/corps-de-wali.html").then(r => r.text())
+        ])
+        .then(([tete_d_index, corps_d_index]) => {
+            document.querySelector("#accueil_head").innerHTML = tete_d_index;
+            document.querySelector("#accueil_body").innerHTML = corps_d_index;
             changementDeLangue();
-        });
-    </script>
-
-    <script>
-        fetch("/html/corps-de-wali.html")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector("#accueil_body").innerHTML = html;
         });
     </script>
 
