@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ߛߍ߬ߣߍ</title>
+
+    <link rel="stylesheet" href="../../css/agriculture.css">
+    <link rel="stylesheet" href="../../css/class.css">
+    <link rel="stylesheet" href="../../css/tete-de-wali.css">
+
+</head>
+<body>
+
+    <div class="page_head" id="agriculture_head"></div>
+    <div class="page_body" id="agriculture_body"></div>
+
+    <script>
+        fetch("../tete-de-wali.html")
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector("#agriculture_head").innerHTML = html;
+        
+            changementDeLangue();
+        });
+    </script>
+
+    <script>
+        fetch("./agriculture_index_body.html")
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector("#agriculture_body").innerHTML = html;
+        });
+    </script>
+
+
+    <script src="../../jquery-3.3.1.js"></script>
+    <script src="../../js/fonctions.js"></script>
+    <script src="../../js/agriculture.js"></script>
+</body>
+</html>
