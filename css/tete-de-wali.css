@@ -1,18 +1,4 @@
-.nk {
-    display: none;
-    direction: rtl;
-}
-.fr {
-    display: block;
-    direction: ltr;
-}
-#tete_de_wali {
-    background-color: greenyellow;
-    height: 10vh;
-    min-height: 3rem;
-    width: 100%;
-    margin: 0;
-}
+
 #nom_de_ferme, #langue {
     position: relative;
     display: inline-block; 

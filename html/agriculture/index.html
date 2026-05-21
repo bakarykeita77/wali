@@ -15,25 +15,18 @@
 
     <div class="page_head" id="agriculture_head"></div>
     <div class="page_body" id="agriculture_body"></div>
-
+    
     <script>
-        fetch("../tete-de-wali.html")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector("#agriculture_head").innerHTML = html;
-        
+        Promise.all([
+            fetch("../tete-de-wali.html").then(r => r.text()),
+            fetch("./agriculture_index_body.html").then(r => r.text())
+        ])
+        .then(([page_head, page_body]) => {
+            document.querySelector("#agriculture_head").innerHTML = page_head;
+            document.querySelector("#agriculture_body").innerHTML = page_body;
             changementDeLangue();
         });
     </script>
-
-    <script>
-        fetch("./agriculture_index_body.html")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector("#agriculture_body").innerHTML = html;
-        });
-    </script>
-
 
     <script src="../../jquery-3.3.1.js"></script>
     <script src="../../js/fonctions.js"></script>

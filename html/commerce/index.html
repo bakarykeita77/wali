@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>ߓߋߦߊ߲</title>
+    <title>ߖߎ߬ߟߊ߬ߦߊ</title>
 
-    <link rel="stylesheet" href="../../css/elevage.css">
+    <link rel="stylesheet" href="../../css/commerce.css">
     <link rel="stylesheet" href="../../css/class.css">
     <link rel="stylesheet" href="../../css/tete-de-wali.css">
+
 </head>
 <body>
-    
-    <div class="page_head" id="elevage_head"></div>
-    <div class="page_body" id="elevage_body"></div>
+
+    <div class="page_head" id="commerce_head"></div>
+    <div class="page_body" id="commerce_body"></div>
     
     <script>
         Promise.all([
             fetch("../tete-de-wali.html").then(r => r.text()),
-            fetch("./elevage_index_body.html").then(r => r.text())
+            fetch("./commerce_index_body.html").then(r => r.text())
         ])
         .then(([page_head, page_body]) => {
-            document.querySelector("#elevage_head").innerHTML = page_head;
-            document.querySelector("#elevage_body").innerHTML = page_body;
+            document.querySelector("#commerce_head").innerHTML = page_head;
+            document.querySelector("#commerce_body").innerHTML = page_body;
             changementDeLangue();
         });
     </script>
 
     <script src="../../jquery-3.3.1.js"></script>
     <script src="../../js/fonctions.js"></script>
-    <script src="../../js/elevage.js"></script>
+    <script src="../../js/commerce.js"></script>
 </body>
 </html>
