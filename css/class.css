@@ -4,19 +4,52 @@ body {
 }
 .activite {
     position: relative;
-    margin: 0.25rem 1rem;
+    margin: 0.25rem 0.25rem;
     padding: 0.25rem 1rem;
     background-color: #eee;
     min-height: 16rem;
+    overflow: hidden;
 }
 .activite a {
     text-decoration: none;
 }
-.activite_cadre {
-    height: max-content;
-}
 .activite_commentaire {
     padding: 0.5rem;
+}
+.liste_container {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+.activite ul { 
+    list-style: none; 
+    padding: 0;
+}
+.activite li {
+    border: 1px solid transparent;
+    border-bottom-color: #aaa;
+    margin: 0;
+    padding: 0.25rem 1rem;
+    overflow-x: visible;
+}
+.activite li img, .activite li b {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.activite li img {
+    padding: 0.125rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
+.activite li b {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 0.25rem;
+    white-space: nowrap;
+    overflow: visible;
 }
 .activite_image img {
     position: absolute;
