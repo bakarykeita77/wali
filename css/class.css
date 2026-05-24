@@ -10,6 +10,12 @@ body {
     min-height: 16rem;
     overflow: hidden;
 }
+.activity_image img {
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    opacity: 0.2;
+}
 .activite a {
     text-decoration: none;
 }
@@ -42,12 +48,15 @@ body {
     height: 2rem;
     border: 1px solid #aaa;
     border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    transform: scale(1.25);
 }
 .activite li b {
-    width: 3rem;
+    width: 2.5rem;
     height: 3rem;
     line-height: 3rem;
-    padding: 0 0.25rem;
+    padding: 0 0.5rem;
     white-space: nowrap;
     overflow: visible;
 }
@@ -89,6 +98,7 @@ body {
     height: 10vh;
     min-height: 3rem;
     background-color: greenyellow;
+    box-shadow: 0.5rem 0 0.5rem #aaa;
     z-index: 1;
 }
 .trait_vertical {

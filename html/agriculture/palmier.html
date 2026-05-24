@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ߕߌ߲߭</title>
+
+    <link rel="stylesheet" href="../../css/palmier.css">
+    <link rel="stylesheet" href="../../css/class.css">
+    <link rel="stylesheet" href="../../css/tete-de-wali.css">
+
+</head>
+<body>
+
+    <div class="page_head" id="palmier_head"></div>
+    <div class="page_body" id="palmier_body"></div>
+    
+    <script>
+        Promise.all([
+            fetch("../../html/tete-de-wali.html").then(r => r.text()),
+            fetch("./palmier-body.html").then(r => r.text())
+        ])
+        .then(([page_head, page_body]) => {
+            document.querySelector("#palmier_head").innerHTML = page_head;
+            document.querySelector("#palmier_body").innerHTML = page_body;
+            changementDeLangue();
+        });
+    </script>
+
+    <script src="../../jquery-3.3.1.js"></script>
+    <script src="../../js/fonctions.js"></script>
+    <script src="../../js/palmier.js"></script>
+</body>
+</html>
