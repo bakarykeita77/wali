@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Times New Roman";
 }
 .activite {
     position: relative;
@@ -22,6 +23,9 @@ body {
 .activite_commentaire {
     padding: 0.5rem;
 }
+.activite_image img {
+    margin-top: 3rem;
+}
 .fa-house {
     color: black;
 }
@@ -39,6 +43,7 @@ body {
     margin: 0;
     padding: 0.25rem 1rem;
     overflow-x: visible;
+    cursor: pointer;
 }
 .activite li img, .activite li b {
     display: inline-block;
@@ -71,9 +76,14 @@ body {
     opacity: 0.25;
 }
 .activite_label {
-    font-size: 1.125rem;
+    height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    border-bottom: 1px solid #ccc;
+    background-color: #ccc;
+    border: 0.125rem solid transparent;
+    border-top-color: #aaa;
+    border-bottom-color: #aaa;
 }
 .afficher {display: block;}
 .fr {
@@ -103,10 +113,4 @@ body {
     background-color: greenyellow;
     box-shadow: 0.5rem 0 0.5rem #aaa;
     z-index: 1;
-}
-.trait_vertical {
-    width: 1px;
-    height: 5rem;
-    background-color: #ccc;
-    margin: 0;
 }
