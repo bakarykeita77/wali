@@ -26,13 +26,6 @@ body {
 .activite_image img {
     margin-top: 3rem;
 }
-.fa-house {
-    color: black;
-}
-.liste_container {
-    max-height: 20rem;
-    overflow-y: auto;
-}
 .activite ul { 
     list-style: none; 
     padding: 0;
@@ -86,9 +79,16 @@ body {
     border-bottom-color: #aaa;
 }
 .afficher {display: block;}
+.fa-house {
+    color: black;
+}
 .fr {
     display: block;
     direction: ltr;
+}
+.liste_container {
+    max-height: 20rem;
+    overflow-y: auto;
 }
 .nk {
     display: none;

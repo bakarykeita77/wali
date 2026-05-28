@@ -7,12 +7,9 @@
     
     <title>Wali</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/class.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/tete-de-wali.css">
+    <link rel="stylesheet" href="./css/class.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/tete-de-wali.css">
 </head>
 <body>
 
@@ -21,8 +18,8 @@
 
     <script>
         Promise.all([
-            fetch("/html/tete-de-wali.html").then(r => r.text()),
-            fetch("/html/corps-de-wali.html").then(r => r.text())
+            fetch("./html/tete-de-wali.html").then(r => r.text()),
+            fetch("./html/corps-de-wali.html").then(r => r.text())
         ])
         .then(([tete_d_index, corps_d_index]) => {
             document.querySelector("#accueil_head").innerHTML = tete_d_index;
@@ -31,7 +28,7 @@
         });
     </script>
 
-    <script src="/jquery-3.3.1.js"></script>
-    <script src="/js/fonctions.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="./jquery-3.3.1.js"></script>
+    <script src="./js/fonctions.js"></script>
+    <script src="./js/index.js"></script>
 </body> 

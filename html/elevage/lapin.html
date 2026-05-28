@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ߛߊ߲ߣߍ߲</title>
+
+    <link rel="stylesheet" href="../../css/lapin.css">
+    <link rel="stylesheet" href="../../css/class.css">
+    <link rel="stylesheet" href="../../css/tete-de-wali.css">
+
+</head>
+<body>
+
+    <div class="page_head" id="lapin_head"></div>
+    <div class="page_body" id="lapin_body"></div>
+    
+    <script>
+        Promise.all([
+            fetch("../../html/tete-de-wali.html").then(r => r.text()),
+            fetch("./lapin-body.html").then(r => r.text())
+        ])
+        .then(([page_head, page_body]) => {
+            document.querySelector("#lapin_head").innerHTML = page_head;
+            document.querySelector("#lapin_body").innerHTML = page_body;
+            changementDeLangue();
+        });
+    </script>
+
+    <script src="../../jquery-3.3.1.js"></script>
+    <script src="../../js/fonctions.js"></script>
+    <script src="../../js/lapin.js"></script>
+</body>
+</html>
